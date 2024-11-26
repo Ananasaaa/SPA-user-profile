@@ -227,7 +227,7 @@ const ProfileForm = () => {
           </div>
 
           <div className="mb-3">
-            <label>Visibility</label>
+            <label>Show your profile in Launchpad?</label>
             <div>
               <input
                 type="radio"
@@ -235,7 +235,7 @@ const ProfileForm = () => {
                 value="Private"
                 {...register('visibility')}
               />
-              <label htmlFor="private" className="ms-1">Private</label>
+              <label htmlFor="private" className="ms-1 me-1">Private</label>
 
               <input
                 type="radio"
