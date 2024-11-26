@@ -235,7 +235,7 @@ const ProfileForm = () => {
                 value="Private"
                 {...register('visibility')}
               />
-              <label htmlFor="private">Private</label>
+              <label htmlFor="private" className="ms-1">Private</label>
 
               <input
                 type="radio"
@@ -243,9 +243,31 @@ const ProfileForm = () => {
                 value="Public"
                 {...register('visibility')}
               />
-              <label htmlFor="public">Public</label>
+              <label htmlFor="public" className="ms-1">Public</label>
             </div>
           </div>
+
+          <div className="mb-4 d-flex align-items-center justify-content-between">
+          <label className="mb-0">The scopes of your interest:</label>
+          <button type="button" className="btn btn-link p-0 text-decoration-none">
+            +
+          </button>
+        </div>
+
+        <div className="mb-4 d-flex align-items-center justify-content-between">
+          <label className="mb-0">Potential interests:</label>
+          <button type="button" className="btn btn-link p-0 text-decoration-none">
+            +
+          </button>
+        </div>
+
+        <div className="mb-4 d-flex align-items-center justify-content-between">
+          <label className="mb-0">Your links:</label>
+          <button type="button" className="btn btn-link p-0 text-decoration-none">
+            +
+          </button>
+        </div>
+
 
           <div className="d-flex justify-content-end gap-4">
             <button type="submit" className="btn btn-primary">Save</button>
